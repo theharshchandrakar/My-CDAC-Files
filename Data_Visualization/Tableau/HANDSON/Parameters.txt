@@ -1,0 +1,2 @@
+#Parameters in Tableau - 
+Two Types of parameters

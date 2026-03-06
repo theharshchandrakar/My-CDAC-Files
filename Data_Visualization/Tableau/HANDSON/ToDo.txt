@@ -1,0 +1,7 @@
+Build following charts for Qty
+
+1. Discrete month Qty area chart (show min/max values)
+2. Qty by Sub-Category (treemap)
+3. Qty by Region (horizontal bar)
+4. Qty by Market (pie chart)
+5. Qty Histogram (bin size 1)

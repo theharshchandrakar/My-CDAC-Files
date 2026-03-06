@@ -1,0 +1,10 @@
+**How to add DROPDOWN**
+
+-select a cell to add drpdwn
+-data tab
+-data tools
+-data validation
+-settings>allow>list
+-source arrow 
+-select data cells for dropdown
+done :)

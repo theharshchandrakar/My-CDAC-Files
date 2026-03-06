@@ -1,0 +1,201 @@
+Filters in Tableau-
+1.	Data Source
+2.	Quick
+3.	Dimension
+4.	Measure
+5.	Date
+6.	Top/Bottom
+7.	Context
+	Data Source Brazil out of all Countries (Why Import all?)
+	
+	Quick - without selecting filter option
+Data Source
+ 
+Even before we start
+------
+ 	 
+Dimension Filter
+Dragging and dropping the col into Filter
+
+------
+
+Six styles of dimension filter-
+1.	Multi value list
+2.	Multi value dropdown
+3.	Single value list
+4.	Single value dropdown
+5.	Single value slider
+6.	Wildcard match
+----
+Revenue by Market
+
+1) Create a treemap of sub-category & profit. Add two fields on the filter - Gender & Market. Show both filters as single value list. Set sheet name as "Profit by Sub-category" and make title dynamic to display selected gender & market.
+
+2) Create a discrete are chart using order date month and quantity. Show Min/Max Labels. Add filters - Category & Order priority. Show both filters as single single value dropdown. Make title dynamic.
+Monthly Quantity
+-----------------------
+4. Measure
+1) Create side-by-side bar chart using Segment, Ship Mode and Revenue. Show labels for revenuw. Then add revenue on filter and show it. Make title dynamic.
+Revenue by Segment & Ship Mode. 
+----
+5. Date
+
+Quantity by Region
+
+1) Create solid map of country & profit. Use diverging color for profit & loss. Add order date filter of type – Month/Year. Show filter as single value slider. Make it dynamic
+Profit by Country
+2) Create a scatter plot of revenue vs profit by Sub-category. Add two filters - Market and Order Date month. Show market filter as single value list and order date month as single value slider. Make title dynamic.
+
+Profit vs Revenue by Sub-category
+---
+6. Top/Down
+
+Top 10 Customers by Profit
+
+1) Create a treemap of top 15 customers by shipping cost.
+Top 15 Customers by Shipping cost
+
+2) Create bubble chart of bottom 8 product names by revenue.
+Bottom 8 Products by Revenue
+
+3) Create a bar chart of bottom 12 products by quantity.
+Bottom 12 Products by Quantity
+
+4) Top 5 Countries by No. of Orders
+
+Context filter - this type of filter is needed when regular filter is added to existing top/bottom filter to fox no. of records returned
+-------------------
+7. Context Filter
+
+
+Top 10 customers by Revenue (Context Filter)
+
+1) Display bottom 5 sub-categories by profit. Add region filter. And verify 5 sub-categories for each region.
+Bottom 5 sub-categories by Profit (Context Filter)
+
+2) Top 10 countries by Shipping cost (Context Filter)
+	solid map
+
+-----------------------------------------
+How to create custom groups in Tableau?
+Create 4 groups of sub-categories as below
+1)	SubCat Grp 1 – Accessories, labels, Storage & Phones
+2)	SubCat Grp 2 – Tables, Appliances, Paper & Art
+3)	SubCat Grp 3 – Furnishing, Copier, Binder & Machine
+4)	SubCat Grp 4 – Chair, Bookcases, Envelope,  Fastener & Supplies
+
+Create a tree map of Sub-Cat & Profit
+Profit by Sub-Category Custom Group
+
+1) Discrete Month (Order Date) line chart of Quantity. min/max of Qty
+Monthly Quantity by Sub Category Group
+
+Create 4 Custom Groups using Region as below-
+1) Region Group 1 - South, Central asia, EMEA & West
+2) Region Group 2 - Central, Canada, Caribbean, East
+3) Region Group 3 - North, Oceania, North Asia, Southeast Asia & Africa
+
+Then using these groups, create following charts
+	a) Create discrete monthly line chart using Profit. Add custom group to color.
+	Monthly Profit by Region Group
+	b) Create Treemap using Region & Quantity. Add custom group to color.
+	Quantity vs Region
+
+--------------------------------------------------------
+Parameters in Tableau
+two types of parameters-
+	1. Regular parameter
+	2. Reference line parameter
+
+Revenue by Sub-category (Reference line)
+	Above Revenue Reference Parameter?
+
+Revenue by Region Parameter
+
+Qty vs Sub-cat
+	4k, 20k
+	step 1k
+	qty range param 
+show the parameter on the right side.
+Quantity by Sub-category Parameter?
+
+1) Create vertical bar chart of region & quantity. Add reference line with quantity range parameter. Show bars above & below parameter value in different colors using calculated field.
+Quantity by Region
+
+
+----------------------------------------------------
+Calculated fields – used to create custom calculations in Tableau e.g. to build KPIs
+
+Two types of calculated fields – 
+1.	Regular fields
+2.	Fields with parameters
+
+Total Revenue
+Total Profit
+Total Quantity
+Total Shipping Cost
+Avg Discount
+No. of Orders
+No. of Products
+No. of Customers
+Order Delayed?
+
+1) Create a treemap of Region and avg discount. Add Segment filter.
+Avg. Discount by Region
+
+2) Create vertical bar chart of Market and no. of customers. Add filters - Category & Gender
+No. of Customers by Market
+
+3) Create area chart of discrete month order date and total profit. Add filters - Region. Show min/max
+Monthly Profit
+
+4) Create solid map of country and total quantity. Add filters- Market and Order Date year.
+Total Quantity by Country
+
+5) Create pie chart of two fields - Order Delayed and no. of orders
+Order Delayed vs No. of Orders
+
+Create a new calculated field - avg(delay days)
+
+6) Treemap of sub-cat and avg. discount. display label. Differentiate between Discounts by 15%
+Average Discount by Sub-Category 
+
+Create a new parameter for Avg Discount - Avg Discount Parameter
+Avg. Discount by Region
+
+How to create parameters with measure & dimension names?
+
+Revenue
+Profit
+Shipping Cost
+Quantity
+
+Dynamic measure by Sub-category (bar chart)
+
+create a treemap using region
+Dynamic measure by Region (tree map)
+---
+Category
+Segment
+Ship Mode
+Order Priority
+
+1) Create a new parameter "Select dimension name" of string data type with above 4 values.
+
+2) Then create calculated field "Show selected dimension" using this parameter.
+
+Actual Profit
+
+Profit by Dynamic Dimension
+------------------------
+name- Dynamic measures and dimensions
+
+Completed Project_4
+
+
+
+
+
+
+
+

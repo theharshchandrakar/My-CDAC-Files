@@ -1,0 +1,12 @@
+A bank's fraud detection system analyzed 1000 credit card transactions. Out of these, 400 transactions were flagged as fraudulent by the system. 
+In reality, 350 transactions were actually fraudulent. Among the flagged transactions, 300 were truly fraudulent.
+Based on this information, calculate the True Positives (TP), True Negatives (TN), False Positives
+(FP), and False Negatives (FN), and construct the confusion matrix.
+Step 1: True Positives (TP): Already given: TP = 300
+This is the number of transactions correctly flagged as fraud.
+Step 2: False Positives (FP): FP = Predicted Fraudulent: TP - FP = 400-300=100
+These are legitimate transactions incorrectly flagged as fraud.
+Step 3: False Negatives (FN): FN = Actually Fraudulent: TP - FN = 350-300 = 50
+These are fraudulent transactions that the system missed.
+Step 4: True Negatives (TN): TN= Total-(TP+FP+FN)=1000-(300+100+50)=550
+These are legitimate transactions correctly identified as legitimate.

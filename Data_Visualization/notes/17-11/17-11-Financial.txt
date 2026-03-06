@@ -1,0 +1,15 @@
+Build following charts on financial sample
+
+1) Scatter plot of actual cost vs profit by country (add average lines here) Filter- Segment Name
+Cost vs Profit by Country
+
+2) Monthly Units Sold forecasting for next 12 months (add Discount band filter)
+Monthly Units Sold forecasting for next 12 months
+
+3) Scatter plot of Actual Revenue vs profit.. Remove aggregation. Add trend line & find line eq.
+Sales vs Profit
+
+4) Monthly Revenue moving Average (5 period) Filter-Country
+Monthly Revenue
+
+

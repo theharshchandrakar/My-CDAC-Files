@@ -1,0 +1,110 @@
+14-11
+--------------------------------------------
+Tree Map
+similar to Bubble char except that it shows each value as rectangle.
+	Shows Rectangle	
+	Value Big => rectangle bigger
+	Value Big => Colour darker
+-------
+Two types of treemap –
+1.	Without group
+2.	With group
+
+Revenue by Sub-category (Treemap)
+
+1) Profit by Sub-category (Treemap)
+2) Profit by Region (Treemap)
+3) Quantity by Region (Treemap)
+4) No. of orders by Sub-category (Treemap) 
+
+How to use TreeMap for decision making?
+
+Create treemap of shipping cost by sub-category.
+Identify all sub-categories having shipping cost more than 100k.
+
+Treemap- Sub-category by No. of Products. Identify the sub-categories where no. of products are below 500.
+
+Grouping in Treemap
+Profit by Market group by Gender (Treemap)
+
+1) Profit by Order Priority group by Segment (Treemap)
+2) Quantity by Ship Mode group by Category (Treemap)
+3) No. of orders by Region group by Gender (Treemap)
+
+Example- Profit value asked
+	1. Year 1
+	2. Quarter 4
+	3. Month	12
+	4. Week	52
+	5. Days	365
+			
+			1->5 Drill down approach
+			5-> roll up approach
+
+--------------------------------------------------
+what is Time series data?
+--------------------------------------------------
+Line Chart – used to represent data of time series
+
+To create line chart, use one date field and one measure. Always add the date field in column and measure in  row for line chart.
+
+Two varieties of line chart-
+1. Discrete - Here the line chart is created for individual date part e.g. day, month, quarter, etc.
+	Shown in BLUE color.
+2. Continuous - Here the line chart is created using year and individual date part month or quarter.
+	Shown in GREEN color
+
+Quarterly Revenue for each year (Discrete line)
+Quarterly Revenue for each year (Continuous line)
+
+1) Quarterly Profit for each year (Discrete line)
+2) Quarterly Quantity for each year (Continuous line)
+
+How to add comments on the chart using Annotations?
+	1. Specific comments
+	2. General comments
+
+Monthly Shipping Cost (Discrete line)
+
+1) Create discrete line chart of monthly quantity. Show only min & max values and add annotation.
+Monthly Quantity (Discrete line)
+2) Create continuous line chart of monthly quantity. Show only min & max values and add annotation.
+Monthly Quantity (Continuous line)
+---
+How to add dimension on a line chart
+1) Create a line chart of discrete month order date and quantity. min/max labels. Add category on color button.
+	Monthly Quantity by Category (Discrete line)
+
+General Comments
+-----------------------------------------------------------
+10 am break
+-------------
+
+Dual Charts
+Dual line & Dual combo
+These charts are used to compare target (expected) values against the actual values. These charts require one data field and two measures.
+Expected vs Actual Monthly Revenue comparison (Dual line)
+
+Expected vs Actual Monthly Revenue comparison (Dual Combo)
+Expected vs Actual Monthly Profit comparison (Dual Combo)
+
+Area chart is alternate to line chart and comes in two varieties - Discrete & Continuous.
+
+Quarterly Profit for each year (Discrete area)
+1) Create area chart of continuous month order date using Revenue and show min max labels.
+	Monthly Revenue for each month (Continuous area)
+2) Create area chart of continuous month order date using Quantity and show min max labels.
+	Monthly Quantity for each month (Continuous)
+2) Create area chart of continuous month order date using no. of orders and show min max labels.
+	Monthly Orders for each month (Continuous)
+
+
+Monthly Profit by Segment (Discrete Area)
+--------------------------------------------------------
+Completed Project 2
+Save Project 2
+--------------------------------------------------------
+
+
+
+

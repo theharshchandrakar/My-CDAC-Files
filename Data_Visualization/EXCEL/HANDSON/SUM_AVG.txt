@@ -1,0 +1,16 @@
+1.	Calculate total of actual sales column
+	=SUM(rowStart:rowEnd)
+2.	Calculate total actual profit for product id 5.
+	=SUMIF(from_this_range:select_value:then_do_sum_on_these_values)
+	=SUMIF(G2:G26, “5",D2:D26)
+
+3. Total expected cost for Product id 10 =SUMIF(G2:G26,"10",E2:E26)
+4. Total actual sales for area code 970 =SUMIF(H2:H26,"970",B2:B26)
+5. Total expected sales for area code 309 =SUMIF(H2:H26,"309",C2:C26)
+
+6. Calculate average of actual cost column.
+
+7. Calculate average expected profit for area code 719
+   =AVERAGEIF(H2:H26,"719",E2:E26)
+
+8. Calculate average expected profit for product id = 6

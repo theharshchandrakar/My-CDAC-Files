@@ -1,0 +1,16 @@
+1. Count no of records in product id (counts only numeric data)
+	=COUNT(G2:G26)
+	=COUNTA(G2:G26)
+	=COUNTBLANK(G2:G26)
+2. Countno of records in 
+	=COUNTIF(D2:D26,">100")
+3. Find no of records in expected cost where value is below 75
+	=COUNTIF(E2:E26,"<75")
+
+	#3 QUESTIONS MISSING
+---------------------------------------------------------------
+
+	">"&CELLNAME     (Concatenation)
+=COUNTIF(B2:B16,">"&F17)
+=COUNTIFS()				#For multiple conditions
+=COUNTIFS(A2:A101,">=1",A2:A101,"<=100")

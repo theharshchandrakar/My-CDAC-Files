@@ -1,0 +1,18 @@
+##Problem-Statement
+**PMT**
+1. A customer has applied a load of 2lakh from a bank @9% for 7 years. Calculate monthly EMI.
+
+2.A customer has applied a loaN of 925000 from a bank @8.75 for 10 Years. Calculate monthly EMI.
+
+3.A customer has applied a load of 11,65,000 from a bank @10.15% for 14 years. Calculate monthly EMI.
+4.A customer wants car. applied loan in 2 bank - B1 B2
+B1 = 8lakh @5.75% for 4years
+B1 = 8lakh @5.65% for 4.5years
+A) which bank charges more EMI
+B1
+b) which bank gets more interest
+B1
+-------------------------------------------------------------------------------------
+nature
+future
+-------------------------------------------------------------------------------------

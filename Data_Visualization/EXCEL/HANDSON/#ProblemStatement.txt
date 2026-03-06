@@ -1,0 +1,1 @@
+Factory Manager wants to achieve profit of 1500 by adjusting cost or price or quantity and get best possible solution.

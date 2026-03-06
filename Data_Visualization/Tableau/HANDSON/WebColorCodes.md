@@ -1,0 +1,25 @@
+Color Name        Hex Code
+----------------- --------
+- Black             #000000
+- White             #FFFFFF
+- Red               #FF0000
+- Green             #008000
+- Blue              #0000FF
+- Aqua (Cyan)       #00FFFF
+- Yellow            #FFFF00
+- Magenta (Fuchsia) #FF00FF
+- Lime              #00FF00
+- Orange            #FFA500
+- Purple            #800080
+- Maroon            #800000
+- Navy              #000080
+- Teal              #008080
+- Olive             #808000
+- Gray              #808080
+- Silver            #C0C0C0
+- Gold              #FFD700
+- Pink              #FFC0CB
+- Coral             #FF7F50
+- Indigo            #4B0082
+- Violet            #EE82EE
+- Turquoise         #40E0D0

@@ -1,0 +1,32 @@
+# 1. Google Drive & Windows Shortcuts (Fixes your current errors)
+*.lnk
+*.gsheet
+*.gdoc
+*.gslides
+
+# 2. Windows OS System Files (Hidden files Windows creates automatically)
+Thumbs.db
+desktop.ini
+
+# 3. Python & Jupyter Notebook Caches (Prevents junk files from uploading)
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# 4. Virtual Environments & Secrets (Never upload passwords or heavy environments)
+venv/
+env/
+.env
+
+# 5. IDE & Editor Folders (Keeps your personal editor settings private)
+.vscode/
+.idea/
+
+# 6. Large Data Files (Git is for code, not massive datasets!)
+# Note: Remove the '#' if you want to completely ignore all data files
+# *.csv
+# *.xlsx
+# *.dat
+# *.parquet*.tar.gz
+*.pkl

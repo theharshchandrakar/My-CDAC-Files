@@ -1,0 +1,16 @@
+gender,age,pclass,embarked,survived
+male,22.0,3,S,0
+female,38.0,1,C,1
+female,26.0,3,S,1
+female,35.0,1,S,1
+male,35.0,3,S,0
+male,54.0,1,S,0
+male,2.0,3,S,0
+female,27.0,3,S,1
+female,14.0,2,C,1
+female,4.0,3,S,1
+female,58.0,1,S,1
+male,20.0,3,S,0
+male,39.0,3,S,0
+female,14.0,3,S,0
+female,55.0,2,S,1

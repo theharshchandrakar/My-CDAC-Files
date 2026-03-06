@@ -1,0 +1,187 @@
+1. Groupby
+2. from 
+3. having
+4. order by
+5. select
+6. where
+
+what is the writing order and execution order?
+differentiate btw having and where.
+---------
+Imp agg f
+sum()
+avg()
+count()
+---------
+4 types of joins
+- Inner join
+-left outer join
+-right outer join
+-full outer join
+---------
+
+excel is a spreadsheet and not db.  (for small data, business logic)
+VBA (Visual Basic for Applications)
+- Customise you excel file
+--------
+
+Excel-Exercise.xlsx -> Transactions
+13 	cols
+4248 	rows
+-
+13 fields
+4248 records
+---------
+foreign key
+Referential Integrity: Allowing NULL values in a foreign key column does not violate referential integrity.
+
+	A foreign key constraint requires that any non-NULL value must 	match a primary or unique key in the parent table.
+	
+	Since NULL means "unknown" or "no value," it is treated as the 	absence of a relationship and is ignored by the referential 	integrity check.
+----------
+area code is primary in location table, foreign in transactions.
+ProductId is primary in Product table, foreign in Transactions.
+
+why is primary key usually int and not anything else like aphanumeric? -> indexing
+
+select a part of transactions sheet-> d col-I col for 25 records
+<refer the .docx>
+
+copy-> go to SUM Function sheet.
+paste-> Paste-> values (V)
+
+copy B:C cols from transactions after the previous cols.
+-----SUM-----
+	1) Calculate total of actual sales column.
+		=SUM(B2:B26)
+	do it for all other aggregated cols.
+
+how to do conditional sum.
+	2) Calculate total actual profit for product id=5.
+		=SUMIF(range, criteria, [sumrange])
+		range is for criteria
+		=SUMIF(G2:G26,"5",D2:D26)
+	3) Calculate total expected cost for product id=10.
+		=SUMIF(G2:G26,"10",E2:E26)
+	
+	4) Calulate total actual sales for area code 970.
+		=SUMIF(H2:H26,"970",B2:B26)
+
+	5) Calculate total expected sales for area code 309.
+		=SUMIF(H2:H26,"309",A2:A26)
+-----AVERAGE-----
+	6) Calculate average of actual cost column
+		=AVERAGE(F2:F26)
+	
+	7) Calculate average expected profit for area code = 719
+		=AVERAGEIF(H2:H26, "719",C2:C26)
+
+	8) Calculate average actual cost for product id =6
+		=AVERAGEIF(G2:G26, "6",F2:F26)
+------Count--------
+Count() will only consider numeric data
+CountA() will consider alphanumeric
+CountBlank() will 
+	9) Count no of records in product id col.
+		=COUNT(G2:G26)
+		
+	10) Find no. of records in actual profit where val >100.
+		=COUNTIF(D2:D26, ">100")
+		
+	11) Find no. of records expected cost, val<75
+		=COUNTIF(E2:E26,"<75")
+
+-------------------------------------------------------------
+Absolute vs Relative Reference
+
+Interest (Before TDS) = P * Interest rate
+Interest (After TDS) = P * (1-TDS)
+
+absolute path = $a$2
+
+create dropdown with values
+(refer 11-11.docx)
+-------------------------------------------------------------
+Conditional formatting
+(refer 11-11.docx)
+
+-----------
+Count sheet
+Conditional formatting
+Conditional formatting rules for Area Code
+1)	Upto 350 – green
+2)	351 to 500 – yellow
+3)	501 to 700 – blue
+4)	701 or above – grey
+--------------------------------------------------------------
+Co-relation
+3 types of correlation
+1.	Positive
+2.	Negative
+3.	Neutral
+Coefficient of correlation – between -1 to +1
+
+Works only on numeric values
+		CORREL
+		
+--------------------------------------------------------------
+
+Outliers
+Extreme values in the data set which are away from normal values by a abnormal distance.
+
+An outlier in statistics is a data point that differs significantly from the overall pattern of a dataset. These extreme values can be much higher or much lower than the other observations and may have a large impact on statistical analyses.
+
+mean
+median
+mode
+
+median
+	odd n
+		(n+1)/2
+	even n
+		n/2
+
+mean median are same in perfectly distributed data (rarely happens in real life)
+
+mode- most frequent value
+
+median (second quartile)- divides the data in 2 equal parts, 50% above 50% below.
+1st quartile 25 % below 75% above
+3rd quartile 70% below 25% above
+
+IQR - InterQuartileRange (diff between Q3-Q1)
+
+Upper limit = Q3 + (1.5 * IQR)
+Upper Whisker
+
+Lower limit = Q1 - (1.5 * IQR)
+Lower Whisker
+
+Highlight all the values below lower whiskers and above upper whisker
+---------------------------------------------------------------------
+Most important Charts in business
+1. Bar
+2. Pie
+3. Line
+
+
+pie always show % in pie chart
+
+Line BFSI(Banking Financial Service and Insurance) Industry
+
+Side By Side Bar Chart
+
+How to generate random number between range of values
+Generate 10 random numbers between 10 to 99
+RANDBETWEEN(start, end)
+	RANDBETWEEN(10,99)
+
+to not make them change everytime,
+copy and paste them as Values
+
+		Create new column Quantity with 20 random values between 300 & 500.
+		Create next column Tax with 20 random values between 1000 to 3000. Find 			correlation between them.
+
+
+
+browser - public.tableau.com

@@ -1,0 +1,107 @@
+5. Clustering
+
+Constant line is used to identify values or below a specific target.
+
+Average line is used to identify values above or below average values.
+---
+1) Using constant line, identify the regions where revenue is between 1000k to 2000k.
+
+
+Regions having revenue between 1000k to 2000k (Constant line)
+----
+Scatter plot of revenue vs profit
+
+2) Using constant line, identify the sub-categories having revenue more than 600k and profit more than 150k.
+
+Annotate- Sub-categories having revenue > 600k and profit > 150k.
+
+Sub-categories having revenue > 600k and profit > 150k (Constant line)
+----
+3)
+	Countries having quantity above average (Average line)
+4)	
+	Create scatter plot of revenue vs profit by region. Then add average lines on both axis.
+	Regions having Revenue & Profit above Average
+--------------------
+
+EU-		Actual Profit = 0.100409*Actual Revenue + 17.7333
+
+LATAM-	Actual Profit = 0.182556*Actual Revenue + -4.50673
+
+What if both markets achieve revenue of 10k, how much profit they will earn?
+
+EU	1004+17.7	= 1013
+LATAM 1825-4	= 1821
+-------------------------------------
+Predictive Analytics vs Forecasting
+
+Forecasting has to deal will future time period.
+
+1) Using monthly revenue data, forecast revenue for next 12 months.
+
+TCSI Trend Cyclic Seasonal Irregular
+
+Revenue Forecasting for next 12 months
+
+2) Create continuous month line chart using order date and no. of orders. Do dorecast settings and forecast no. of orders for next months.
+Quantity Forecasting for the next 12 months
+
+3) Create continuous month line chart using order date and Profit. Add forecasting options. Then add two filters - segment & Category. Do forecasting for next 12 months.
+Profit Forecasting for the next 12 months
+
+---------------------------
+Clustering
+
+1) Create a scatter plot of shipping cost (x axis) vs profit (y axis) by Region and add atleast 4 clusters.
+
+Region Cluster by Shipping Cost vs Profit
+--------------------
+
+Table Calculations - 
+1. Running Total
+2. Difference
+3. 3% Difference
+4. Rank
+5. Moving Average
+6. YoY Growth
+
+Revenue Running Total
+Profit Running Total (Table Calculation)
+
+Monthly Quantity Difference (Table Calculation)
+1) Create monthly difference table calcualtion for shipping cost.
+Monthly Shipping Cost Difference (Table Calculation)
+
+Monthly No. of Orders % Difference (Table calculation)
+
+2) Monthly Revenue % Difference (Table calculation)
+
+
+Rank
+1) Sub-category ranking by Profit (Table Calculation)
+2) Sub-category ranking by Quantity (Table Calculation)
+3) Country ranking by Revenue (Table Calculation) (add Market & Order Date year filter)
+
+5. Moving Average
+Line Smoothening technique - reduces short-term changes in the data
+A moving average in time series analysis is a calculation used to smooth out short-term fluctuations and highlight longer-term trends by creating a series of averages of different subsets of the data. 
+Default moving average in Tableau is 3 period moving average (average of current & 2 previous values)
+
+current + 2 previous /2
+
+Monthly Revenue (5 Period Moving Average)
+
+1) 5 period moving average of monthly profit, compare with original values
+Monthly Profit (5 Period Moving Average)
+
+6. YoY Growth
+
+Quarterly Shipping Cost YoY Growth
+
+1) Quarterly Quantity YoY Growth (add two filters - Category & Segment)
+
+2) Quarterly No. of orders YoY Growth (add Sub-cat filter)
+
+
+
+Completed Proj_5

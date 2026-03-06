@@ -1,0 +1,78 @@
+SUM-------------------------------------------
+=SUM(Starting row:Ending Row)
+=SUMIF(Staring row:Ending Roe,"Condition",From which column)
+EX.=SUMIF(G2:G26,"5",D2:D26)
+Average----------------------------------------
+=AVERAGE(A2:A26)
+=AVERAGEIF(H2:H26, "719", C2:C26)
+Count--------------------------------------------
+=COUNT(G1:G26)
+=COUNTA(G2:G26)
+=COUNTBLANK(G2:G26)
+=COUNTIF(D2:D26,">100")
+Conditional Formatting----------------------
+Home->conditional F.->New Rule-:>Second Row->According to Logic.
+Correlation---------------------------------------
+=ROUND(CORREL(A2:A101,C2:C101),3)
+Outliers Detection------------------------
+1)Min=   =MIN(A2:A101)
+2)Max=   =MAX(A2:A101)
+3)Q1=    =QUARTILE(A2:A101, 1)
+4)Q2=    =QUARTILE(A2:A101, 2)
+5)Q3=    =QUARTILE(A2:A101, 3)
+6)IQR    =q3-q1  [=J28-J26
+7)Uppar L  =q3+(1.5*IQR)
+8)Lower L  =q1-(1.5*IQR)
+Give conditional formatting according to values.
+How to create random Values----------------------------
+1)=RANDBETWEEN(1,100)
+
+Absolute Vs Relative-------------------------
+Insert values which you want to insert in list
+Data -> Data Tolls -> Data Validation -> Any Value -> List (here we created list of that)
+=A2*$B$2 (A is column of fixed deposite B2 is constant value of list)
+
+VLOOKUP---------------------------------------------------
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+=VLOOKUP(C2,Location!$B$3:$E$159,2,FALSE)
+c2=Column which is common in bith table on which we want look up value
+Location=All second table
+2:Column index of second table,
+False:Exact Match
+
+Payment Function----------------------------------------------
+1] EMI
+=PMT(Monthly intreast, Duration in month, Loan amount)
+if this come in negative GOTO Currency select indian rupee
+
+2] Total Payment made by customer
+=(emi * duration in month)
+
+3] Total intreast paid to bank by customer
+=(total payment made by customer + loan amount) (+ because we are giving to bank)
+
+4] To find future value
+=FV(ANNUAL INTREAST, DURATION IN YEAR, 0, DEPOSITED AMOUNT* -1)
+=FV(B3,B2,0,B1*-1)
+
+5] To Find Present Value
+=PV(ANNUAL intreast, duration , 0 , amount needed)
+=PV(B3,B2,0,B1)
+
+6] Extra Amount Earned
+=Current investmnet needed + Future amount needed
+
+7]Pivot Table--------------------------------------------
+1)Select All Data 
+2)Click On Pivot Table
+3)Click On ok
+4)Drag & Drop Values
+5)click in table-> Select Chart
+
+
+8] How to create Histogram
+1] Select column which you want
+2] Fin Min, Max, Range
+3] Decide Bin size using countif =COUNTIFS(A2:A101,">=1",A2:A101,"<=100")
+4] Select bin size then go to chart and select bar chart
+

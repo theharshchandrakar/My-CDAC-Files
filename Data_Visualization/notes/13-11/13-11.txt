@@ -1,0 +1,192 @@
+C:\Users\user_name\Documents\My Tableau Repository\Datasources
+
+save the Global Superstore.xlsx in this directory
+
+Orders Sheet
+	cols = 28
+	rows = 51290
+Returned Orders
+	`Order Id` is the connection
+Managers
+	`Region` is the connection
+
+Measure - Any numeric column (with or without decimal) on which maths or stats operations can be performed to generate meaningful result in business.
+	Mean and Median common stats operation.
+	e.g. Profit, tax, discount, quantity, cost, expense, etc.
+
+Dimension - Any numeric or character or data column which is not a measure and can be used to aggregate measures.
+	e.g. department, name, address, city, categories, DOB, joining date, rating, etc.
+	
+	Any primary or foreign key column is always considered as Dimension.
+	Only numeric dimension allowed on DIMENSION is COUNT.
+
+Union() - Doesn't show duplicates
+UnionAll() - Shows Duplicate
+
+Measures -  7
+Dimension - 21
+
+Tableau shows measures in GREEN color and dimensions in BLUE color.
+
+--How to join tables in Tableau (Old vs New)?
+Old Technique - JOIN
+
+New Technique - RELATIONSHIP
+
+
+Data Types in Tableau
+1) Numeric #
+2) String Abc
+3) Date 
+4) Geographic
+5) Boolean T/F
+
+Three types of sorting in Tableau
+1. Ascending
+2. Descending
+3. Default
+
+Three componenets of Tableau
+1. Worksheet
+2. Dashboard
+3. Story
+
+Story can be created using Worksheet & dashboard can't be created using Story.
+
+Nine Sections on Tableau main screen -
+1. Dimension
+2. Measure
+3. Page
+4. Filter
+5. Marks
+6. Rows
+7. Columns
+8. Canvas
+9. Show Me
+
+Four Layout Styles in worksheet-
+1.	Standard (Default)
+2.	Fit Width
+3.	Fit Height
+4.	Entire View
+
+
+Actual Revenue by Sub-category (Text Table)
+
+Shipping Cost by Sub-category(Text Table)
+
+
+1. Actual Profit by Region (Text Table)
+2. Quantity by Region (Text Table)
+3. Shipping Cost by Region (Text Table)
+
+
+-- 10 am Break--
+
+How to convert a dimension to a measure by showing count?
+Normal count vs Distinct count
+
+No. of Orders by Sub-category (Text Table)
+1) No. of Customers by Sub-category (Text Table)
+2) No. of Products by Sub-category (Text Table)
+3) No. of Countries by Market (Text Table)
+4) No. of Orders by Region (Text Table)
+
+Highlight Table
+
+Profit by Region (Highlight table)
+1) Quantity by Region (Highlight table)
+2) Shipping Cost by Sub-category (Highlight table)
+3) No. of Orders by Sub-category (Highlight table)
+
+
+How to use highlight table for decision making?
+
+1) Highlight all values where revenue is above 100k and below 100k.
+Revenue by Sub-category and Region (Above 100k)
+
+2) Profit by Sub-category and Region (Profit vs Loss)
+
+1) Create highlight table using Manager in Rows, return reason in columns and no. of returned orders.
+	Returned orders by Manger & reason (below 10)
+2) Create highlight table using Region in rows, sub-category in column and quantity on value.
+
+Quantity by region & Sub-Category (above 1000)
+-----------------------------------------------------------------------------------------
+
+Pie Chart
+
+Revenue % by Category (Pie Chart)
+
+1) Profit % by Category (Pie Chart)
+2) Quantity % by Segment (Pie Chart)
+3) Shipping cost % by Order Priority (Pie Chart)
+4) Profit % by Ship Mode (Pie Chart)
+
+Revenue by Sub-category (Bubble chart)
+1) Profit by Sub-category (Bubble chart)
+2) Profit by Region (Bubble chart)
+3) Quantity by Market (Bubble chart)
+4) No. of Customers by Market (Bubble chart)
+5) No. of Products by Sub-category (Bubble chart)
+6) No. of returned orders by Return Reason (Bubble chart)
+
+---------------------------------------
+Lunch break
+---------------------------------------
+Bar Chart
+3 types-
+	1) Simple
+	2) Side-by-Side
+	3) 100% Stack
+
+Revenue by Sub-category (Bar chart)
+
+Horizontal Bar
+1) Profit by Sub-category (Bar chart)
+2) Shipping Cost by Region (Bar chart)
+3) No. of Products by sub-category (Bar chart)
+
+Vertical Bar
+4) Profit by Market (Bar chart)
+5) No. of orders by Market (Bar chart)
+6) No. of customer by Region (Bar chart)
+
+How to create bar chart for decision making?
+
+Create horizontal bar chart of no. of orders by Sub-category. Using colour, identify the subcategories where no. of orders ae more than 3000.
+No. of Orders by Sub-Category (above 3000)
+
+shipping cost and sub-category
+Shipping Cost by Sub-category (less than 50k)
+
+
+Side-by-side bar chart
+This chart is used to compare one dimension values inside other dimension with measure.Number of bars created here are no. values in dimension 1 x no. of values in dimension 2.
+	
+Revenue by Category & Gender (Side by side bar)
+1) Profit by Category & Gender (Side by side bar)
+2) Profit by Segment & Order Priority (Side by side bar)
+3) Shipping cost by Order Priority & Category (Side by side bar)
+4) Quantity by Ship Mode & Segment (Side by side bar) (Horizontal)
+5) No. of orders by Segment & Category (Side by side bar) (Horizontal)
+
+100% Stack bar chart -
+
+Same as side by side but the here one dimension values are stacked on top of other values in second dimension
+
+Which dimension to choose for color?
+any dimension having more number of values should start first, color on less number of values.
+
+Profit % by region & Ship Mode (100% stack)
+
+for horizontal- for analysis-> percentage select row
+for vertical  - for analysis-> percentage select column
+Profit % by Region & Ship Mode (100% stack)
+
+1) Create 100% stack bar using Sub-category & Ship mode with profit.
+2) Create 100% stack bar using Sub-Category & Order Priority with quantity.
+3) Create 100% stack bar using Sub-Category & Order Priority with profit.
+
+4) Create 100% stack bar using Market & Gender with No. of orders.
+5) Create 100% stack bar using Market & Category with No. of Products.

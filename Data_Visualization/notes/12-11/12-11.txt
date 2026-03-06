@@ -1,0 +1,167 @@
+12-11
+
+Histogram
+diff form bar chart, supports continuous value over discrete values.
+more suited for integer data than decimal data.
+
+COUNTIFS- ... by a given set of conditions
+	For counting with multiple conditions in this case (1 to 100)
+	=COUNTIFS(A$2:A$101,">=1",A$2:A$101,"<=100")
+
+
+=COUNTIFS(B$2:B$101, ">=-224",B$2:B$101, "<=-150")
+=COUNTIFS(B$2:B$101, ">=-149",B$2:B$101, "<=-75")
+=COUNTIFS(B$2:B$101, ">=-74",B$2:B$101, "<=0")
+=COUNTIFS(B$2:B$101, ">=1",B$2:B$101, "<=75")
+=COUNTIFS(B$2:B$101, ">=76",B$2:B$101, "<=150")
+=COUNTIFS(B$2:B$101, ">=151",B$2:B$101, "<=225")
+=COUNTIFS(B$2:B$101, ">=226",B$2:B$101, "<=300")
+=COUNTIFS(B$2:B$101, ">=301",B$2:B$101, "<=375")
+
+=COUNTIFS(C$2:C$101,">=100",C$2:C$101,"<=199")
+=COUNTIFS(C$2:C$101,">=200",C$2:C$101,"<=299")
+=COUNTIFS(C$2:C$101,">=300",C$2:C$101,"<=399")
+=COUNTIFS(C$2:C$101,">=400",C$2:C$101,"<=499")
+=COUNTIFS(C$2:C$101,">=500",C$2:C$101,"<=599")
+=COUNTIFS(C$2:C$101,">=600",C$2:C$101,"<=699")
+=COUNTIFS(C$2:C$101,">=700",C$2:C$101,"<=799")
+=COUNTIFS(C$2:C$101,">=800",C$2:C$101,"<=899")
+=COUNTIFS(C$2:C$101,">=900",C$2:C$101,"<=999")
+
+Lookup
+	-vlookup
+	-hlookup
+
+VLOOKUP
+	=VLOOKUP(C2, Location!$B$3:$E$159,2,FALSE)
+	=VLOOKUP(C2, Location!$B$3:$E$159,3,FALSE)
+	
+HLOOKUP
+	=HLOOKUP(B2,Product!$C$5:$O$8,2,FALSE)
+	=HLOOKUP(B2,Product!$C$5:$O$8,3,FALSE)
+	
+Pivot Table
+	used to perform analysis by drag and drop.
+
+1) Create a pivot table by usign 2 columns- State & inventory. 	Build horizontal bar chart for this data.
+2) Create a pivot table by using 2 columns - Market & Expenses. 	Build Pie Chart for this data.
+3) Create a pivot table by using 2 columns - Product Type & Actual Cost. Build pie chart for this data.
+4) Create pivot table to show average sales for each product.
+
+------10 am break-----
+------- how to count -------
+5) Create pivot table to show no. of records for each state.
+
+6) Create pivot table to show no. of records for each product type & Market.
+
+7) Create line chart to display monthly sales value (Jan to Dec)
+
+8) Create line chart to display monthly profit value (Jan to Dec). Add Product Type on Filter
+
+9) Create line chart to display monthly inventory value (Jan to Dec). Add Market on Filter
+
+
+
+Union - Consolidate
+join vs union
+	join  - data grows horizontally (increases columns) no. col must match, data type also should match
+	union - data grows vertically, combine data coming from same structure, (getting data from multiple offices and combine the data)
+
+ScatterPlot
+
+Profit vs Margin
+Profit vs Sales
+
+1) Sales vs Inventory
+2) COGS vs Marketing
+3) Profit vs Expenses
+4) Expenses vs Marketing
+5) Marketing vs Inventory
+
+R2 in trendlines for scatter plot
+
+Sales = (1.5984 * Profit) + 101.44
+Coefficient of Profit is 1.59 i.e. if profit increases by 1, sales is liekly to increase by 1.59.
+
+profit	
+100	261.2800
+101	262.8784
+	1.5984
+
+
+(what-if analysis) prescriptive analysis
+
+goal seek- achieve the goal/target by adjusting one parameter at a time
+
+Q. Factory Manager wants to achieve profit of 1500 by adjusting cost or price or quantity and get best possible solution.
+
+--Lunch break--
+
+Financial functions in excel
+1. PMT - to calculate monthly EMI of a loan.
+2. FV - to calculate maturityy amount of a fixed deposit (FD)
+3. PV - to calculate current investment needed for future needs
+
+	parameters-
+		1. amount
+		2. annual interest rate
+		3. duration
+-------PMT-----------
+
+Q1. A customer has applied for loan of 20 Lakhs from a bank at interest rate of 9%  for 7 years. Calculate monthly EMI for this customer
+
+Q2. A customer has applied for loan of 9.25 Lakhs from a bank at interest rate of 8.75%  for 10 years. Calculate monthly EMI for this customer
+
+Q3. A customer has applied for loan of 11.65 Lakhs from a bank at interest rate of 10.15%  for 14 years. Calculate monthly EMI for this customer
+
+Q4. A customer wants to purchase car and has applied loan in 2 banks - B1 and B2
+B1 - 8 Lakhs at 5.75% for 4 years
+B2 - 8 Lakhs at 5.65% for 4.5 years
+	a) which bank charges more EMI?
+	b) which bank gets more interest?
+
+------FV--------
+Q1. Person A has deposited amount of 3 Lakhs in a bank as FS for 6 years at IR of 4.75%. how much money he will receive at the end of 6 years?
+
+Q2. Person B has deposited amount of 4.85 Lakhs in a bank as FD for 4.5 years at IR of 3.85%. how much money he will receive at the end of 4.5 years?
+
+Q3. Person A has deposited amount of 6,11,200 in a bank as FD for 4 years at IR of 4.15%. how much money he will receive at the end of 4 years?
+
+------PV-------
+Q1. Customer A wants to receive 8 Lakhs for education after 9 years. How much money should he currently invest at interest of 4.6 %?
+
+Q2. Customer B wants to receive 6.5 Lakhs for personal expenses after 7.5 years. How much money should he currently invest at interest of 3.8 %?
+
+Q3. Customer C wants to receive 3.65 Lakhs for personal expense after 3.5 years. How much money should he currently invest at interest of 4.2 %?
+
+-----------------------------
+
+Q. In Financial sample file, add 3 new columns Q,R & S with headings = Item Name, Segment Name & Country name. Populate these columns from their respective sheets using appropiate LOOKUP function.
+
+-----------------------------------------------------------
+
+1) Create pivot table using 3 fields - country name in rows, segment name in column, & unit sold in values. side by side bar chart.
+
+2) Create pivot table to find out Average Gross sales for each discount band show using  pie chart.
+
+3) create pivot table to find average actual profit by each month - jan to dec and show line chart. add item name in filter.
+
+4) Create interval bins for unit sold as below-
+	a) 0 to 1000
+	b) 1001 to 2000
+	c) 2001 to 3000
+	d) 3001 to 4000
+	e) 4001 to 5000
+and create histogram using bar chart.
+
+5) Add a new column T with name "Profit Status". If actual profit is negative, show "Loss" in this column otherwise show "Profit".
+
+6) Create a new pivot table to show no. of records by Profit Status and show using Pie CChart. Then add Country Name on filter.
+
+7) Add a new sheet. here create scatter plot of actual revenue on X axis vs actual profit on y axis. show R square & line equation.
+8) using above equation, predict the profit for revenue 12,00,000
+(174056)
+9) If company wants profit of 180000 then how much revenue is required?
+(12,40,846)
+
+10) add units sold on x axis, actual profit on y axis.

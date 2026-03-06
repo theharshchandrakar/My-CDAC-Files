@@ -1,0 +1,109 @@
+Superstore_3
+Bullet Graph - used to compare target vs actual values for a dimension
+	doesn't need dates
+	difficult to understand
+
+
+Expected vs Actual Revenue comparison by Sub-Category (Bullet Graph)
+
+1) Expected vs Actual Revenue comparison by Region (Bullet Graph)
+2) Expected vs Actual Profit comparison by Sub-Category (Bullet Graph)
+3) Expected vs Actual Profit comparison by Region (Bullet Graph)
+
+
+Scatter plot is used to compare two numeric business values on X & Y axis to find possible correlation between them. it helps to create trend line equation and R square.
+
+Line equation
+Y = mX + c where m is the slope and c is constant.
+
+Two types of scatter plot
+	1) with aggregation
+	2) w/o arregation
+
+Copiers is better than Chairs because it has generated more profit than Chairs with same amount of sales.
+
+Accessories is better than Appliances because it has generated same profit than Appliances with less amount of sales.
+
+Revenue vs Profit by Sub-category (Scatter plot)
+
+Shipping Cost vs Profit by Sub-category (Scatter plot)
+
+Accessories is better than Appliances because it has generated same profit than Appliances with less Shipping cost.
+
+Revenue vs Profit by Manager (Scatter plot) 
+
+
+R square is 0.25 i.e. 25% variation in Y is due to variation in X. remaining 75% can be due to unknown factors.
+Actual Profit = 0.1717 * Actual Revenue + 2.2910
+------------------------------------------------------
+Lunch break @ 14:30
+------------------------------------------------------
+
+Geographic charts
+Two types-
+1.	Symbol map
+2.	Solid map
+
+
+Revenue by Country (Symbol map)
+
+1) Profit by Country (Symbol map) profit & loss in green & red resp.
+2) Quantity by Country (Symbol map)
+3) Shipping by Country (Symbol map)
+4) No. of Orders by Country (Symbol map)
+
+
+
+Using solid map of country & revenue, identify the countires where revenue is above 500k
+
+Countries having revenue > 500k (Solid map)
+1) Build solid map of country & shipping cost.Show min/max values.
+COuntries with Shipping 
+
+2) Build solid map of country of no. of orders. Show min/max values.
+Orders by Country
+
+
+
+
+Histogram
+
+
+
+
+Box Plot
+this chart is used to detect outliers in the data.
+
+Quantity by Sub-category (Box plot)
+
+Profit by Region and Order Priority (Box Plot)
+
+----------------------------
+Heat Map
+Identify combination of sub-category & manager having shipping cost above 10k
+
+Shipping cost by Manager (Heat map)
+Profit by Manager (Heat map)
+
+
+------------------------------------
+2 pie chart
+2 bar chart
+2 line chart (1 Discrete + 1 Continuous )
+2 area chart (1 Discrete + 1 Continuous )
+1 Histogram
+-----------
+Profit vs Loss by Gross Sales (Pie Chart)
+Profit by Segment (Pie Chart)
+--
+Profit by Item & Country (100% Stack)
+Profit Status by Item Name (Side by Side)
+--
+Monthly Profit (Discrete Line)
+Monthly Profit (Continuous Line)
+--
+Quarterly Cost by Country (Discrete Area)
+Quarterly Profit by Country (Continous Area)
+--
+
+--
